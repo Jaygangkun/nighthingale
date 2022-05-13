@@ -1,0 +1,437 @@
+@font-face {
+    font-family: "Avenir-Black";
+    src: url("../fonts/AvenirLTStd-Black.otf");
+}
+
+@font-face {
+    font-family: "Avenir-Book";
+    src: url("../fonts/AvenirLTStd-Book.otf");
+}
+
+@font-face {
+    font-family: "Avenir-Roman";
+    src: url("../fonts/AvenirLTStd-Roman.otf");
+}
+
+body {
+    font-family: "Avenir-Book";
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: "Avenir-Black";
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    max-width: 1500px;
+}
+
+.fs-18 {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.fs-20 {
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.fs-24 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.fs-56 {
+    font-size: 56px;
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 64px;
+}
+
+.fw-bold {
+    font-family: "Avenir-Black";
+    font-weight: 800;
+}
+
+p {
+    color: #4F4F4F;
+}
+
+.btn {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    display: inline-block;
+    padding: 16px 50px;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid transparent;
+}
+
+.btn-min {
+    min-width: 150px;
+}
+
+.btn-primary {
+    background-color: #E5635E;
+    color: #ffffff;
+}
+
+.btn-icon {
+    position: relative;
+    min-width: 330px;
+}
+
+.btn-icon__text {
+    
+}
+
+.btn-icon__img {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    height: 30px;
+    transform: translateY(-50%);
+}
+
+.btn-outline {
+    border: 1px solid #E0E0E0;
+    color: #333333;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.w-50 {
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.w-100 {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.mw-500 {
+    max-width: 500px;
+}
+
+.mx-auto {
+    margin: auto !important;
+}
+
+.col-3 {
+    width: 33.33%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.hero-title {
+    color: #333333;
+    margin-bottom: 32px;
+}
+
+.section-title {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 64px;
+    color: #333333;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.form-col-50 {
+    width: calc(50% - 8px);
+}
+
+.form-col-100 {
+    width: 100%;
+}
+
+.form-control {
+    border: 1px solid #E0E0E0;
+    border-radius: 3px;
+    padding: 16px;
+    font-size: 18px;
+    line-height: 32px;
+    color: #828282;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-link {
+    color: #008294;
+    text-decoration: none;
+}
+
+.form-title {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 64px;
+    color: #333333;
+}
+
+.header {
+    padding: 45px 0px;
+}
+
+.header-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-link {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #4F4F4F;
+    margin: 0px 20px;
+}
+
+.header-link:hover {
+    text-decoration: none;
+    color: #E5635E;
+}
+
+.home-hero {
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.home-hero-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-hero-pattern {
+    position: absolute;
+}
+
+#home_hero_pattern_left {
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#home_hero_pattern_center {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0px;
+}
+
+#home_hero_pattern_right {
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.home-hero-list-col {
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.home-hero-list-col__title {
+    font-weight: 900;
+    color: #008294;
+}
+
+.home-hero-list-col__desc {
+    font-weight: 400;
+}
+
+.home-hero-list-col__title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.home-hero-list {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.home-works {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #F2F2F2;
+    position: relative;
+}
+
+.home-works-list {
+    margin-top: 50px;
+}
+
+.home-works-list-col {
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.home-works-list-col__numb {
+    width: 64px;
+    height: 64px;
+    text-align: center;
+    line-height: 64px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 130, 148, 0.4);
+    font-weight: 400;
+    font-size: 32px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+
+.home-works-list-col__name {
+    color: #333333;
+}
+
+.home-works-btn-wrap {
+    position: absolute;
+    bottom: 0px;
+    transform: translate(-50%, 50%);
+    left: 50%;
+}
+
+.home-testimonials {
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+.home-testimonial__desc {
+    font-style: italic;
+}
+
+.home-testimonials-slider {
+    margin-top: 60px;
+}
+
+hr {
+    border: 1px solid #E0E0E0;
+}
+
+.home-qa-list-row__q {
+    font-family: "Avenir-Black";
+    font-weight: 400;
+}
+
+.home-qa-list-wrap {
+    margin-top: 80px;
+}
+
+.home-qa-list-row {
+    margin-bottom: 25px;
+}
+
+.home-qa-list {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.footer {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background: #F2F2F2;
+}
+
+.footer-top {
+    margin-bottom: 80px;
+}
+
+.footer-top-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-menu-header {
+    font-family: "Avenir-Black";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 10px;
+}
+
+.footer-menu-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #4F4F4F;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-bottom .footer-menu-link {
+    margin: 0px 10px;
+}
+
+.signup-logo-img {
+    margin-bottom: 80px;
+}
+
+.signup-page-content {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.form-wrap-sep {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-wrap-sep-title {
+    color: #828282;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    margin: 0px 10px;
+}
+
+.form-wrap-sep-line {
+    flex-grow: 1;
+    height: 1px;
+    background: #E0E0E0;
+}
+
+.signup-page-content .form-wrap-sep{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.form-footer-links {
+    margin-top: 50px;
+}
+
+.form-footer-links .footer-menu-link {
+    margin: 0px 20px;
+}
