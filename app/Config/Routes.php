@@ -34,6 +34,10 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Page::index');
 $routes->get('/signup', 'Page::signup');
 $routes->get('/signin', 'Page::signin');
+$routes->get('/board1', 'Page::board1');
+$routes->get('/board2', 'Page::board2');
+$routes->get('/board3', 'Page::board3');
+$routes->get('/events', 'Page::events');
 
 /*
  * --------------------------------------------------------------------

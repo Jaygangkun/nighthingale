@@ -18,4 +18,24 @@ class Page extends BaseController
     {
         return view('signin');
     }
+
+    public function board1()
+    {
+        return view('board1');
+    }
+
+    public function board2()
+    {
+        return view('board2');
+    }
+
+    public function board3()
+    {
+        return view('board3');
+    }
+
+    public function events()
+    {
+        return view('events');
+    }
 }
