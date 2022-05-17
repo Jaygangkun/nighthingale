@@ -38,4 +38,9 @@ class Page extends BaseController
     {
         return view('events');
     }
+
+    public function eventDetails()
+    {
+        return view('event-details');
+    }
 }

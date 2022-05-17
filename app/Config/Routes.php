@@ -38,6 +38,7 @@ $routes->get('/board1', 'Page::board1');
 $routes->get('/board2', 'Page::board2');
 $routes->get('/board3', 'Page::board3');
 $routes->get('/events', 'Page::events');
+$routes->get('/event-details', 'Page::eventDetails');
 
 /*
  * --------------------------------------------------------------------
