@@ -39,6 +39,7 @@ $routes->get('/board2', 'Page::board2');
 $routes->get('/board3', 'Page::board3');
 $routes->get('/events', 'Page::events');
 $routes->get('/event-details', 'Page::eventDetails');
+$routes->get('/co-founders', 'Page::coFounders');
 
 /*
  * --------------------------------------------------------------------

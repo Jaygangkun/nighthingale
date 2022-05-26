@@ -41,6 +41,11 @@ h1, h2, h3, h4, h5, h6 {
     margin: auto;
 }
 
+.fs-12 {
+    font-size: 12px;
+    line-height: 16px;
+}
+
 .fs-14 {
     font-size: 14px;
     line-height: 24px;
@@ -69,6 +74,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .fs-32 {
     font-size: 32px;
+    line-height: 64px;
+}
+
+.fs-40 {
+    font-size: 40px;
     line-height: 64px;
 }
 
@@ -185,6 +195,10 @@ p {
     margin-bottom: 40px;
 }
 
+.co-founders-page .form-row {
+    margin-bottom: 20px;
+}
+
 .form-col-50 {
     width: calc(50% - 8px);
 }
@@ -205,13 +219,24 @@ p {
     outline: none;
 }
 
+.form-control-sm {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 5px 12px;
+}
+
 .form-control:focus-visible {
     border: 1px solid #008294;
 }
 
-[type="input"].form-control,
+input.form-control,
 select.form-control {
     height: 42px;
+}
+
+input.form-control-sm,
+select.form-control-sm {
+    height: 35px;
 }
 
 .form-multi-options {
@@ -362,7 +387,85 @@ select.form-control {
     transform: rotate(45deg);
 }
 
+/* The container */
+.filter-form-checkbox-wrap {
+    display: block;
+    position: relative;
+    padding-left: 29px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: block;
+    margin-top: 5px;
+}
+  
+/* Hide the browser's default checkbox */
+.filter-form-checkbox-wrap input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+  
+/* Create a custom checkbox */
+.filter-form-checkbox-wrap .checkmark {
+    position: absolute;
+    top: 6px;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    /* background-color: #F2F2F2; */
+    border: 1px solid #E0E0E0;
+    border-radius: 3px;
+}
+  
+/* On mouse-over, add a grey background color */
+.filter-form-checkbox-wrap:hover input ~ .checkmark {
+    background-color: transparent;
+}
+  
+/* When the checkbox is checked, add a blue background */
+.filter-form-checkbox-wrap input:checked ~ .checkmark {
+    background-color: transparent;
+}
+  
+/* Create the checkmark/indicator (hidden when not checked) */
+.filter-form-checkbox-wrap .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+/* Show the checkmark when checked */
+.filter-form-checkbox-wrap input:checked ~ .checkmark:after {
+    display: block;
+}
+  
+/* Style the checkmark/indicator */
+.filter-form-checkbox-wrap .checkmark:after {
+    left: 5px;
+    top: 0px;
+    width: 4px;
+    height: 9px;
+    border: solid #E5635E;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
 .form-checkbox-title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #333333;
+}
+
+.filter-form-checkbox-title {
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
@@ -1165,4 +1268,89 @@ hr {
 
 .attend-details-coupon-input {
     margin-right: 10px;
+}
+
+.filter-label {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.co-founders-page-content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.co-founders-page-content-left {
+    width: 250px;
+    padding: 0px 35px;
+}
+
+.co-founders-page-content-right {
+    flex-grow: 1;
+    margin-left: 80px;
+}
+
+.co-founders-page-title {
+    font-weight: 900;
+    color: #333333;
+}
+
+.co-founders-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.co-founder-col {
+    width: calc(33.33% - 32px);
+    margin: 16px;
+}
+
+.co-founder-wrap {
+    background: #FFFFFF;
+    
+    box-shadow: 0px 6px 12px rgba(24, 39, 75, 0.12), 0px 8px 24px rgba(24, 39, 75, 0.08);
+    border-radius: 3px;
+    padding: 16px 25px;
+    position: relative;
+    text-align: center;
+}
+
+.co-founder-img-wrap {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto;
+}
+
+.co-founder-connect-btn {
+    margin-top: 20px;
+}
+
+.co-founder-favorite-btn {
+    cursor: pointer;
+    position: absolute;
+    left: 25px;
+    top: 16px;
+}
+
+.co-founder-bookmark-btn {
+    cursor: pointer;
+    position: absolute;
+    right: 25px;
+    top: 16px;
+}
+
+.co-founder-name {
+    font-family: "Avenir-Black";
+    margin-top: 15px;
+    margin-bottom: 0px;
 }

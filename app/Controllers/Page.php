@@ -43,4 +43,10 @@ class Page extends BaseController
     {
         return view('event-details');
     }
+
+    public function coFounders()
+    {
+        return view('co-founders');
+    }
+
 }
